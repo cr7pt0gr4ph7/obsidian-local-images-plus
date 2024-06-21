@@ -67,6 +67,7 @@ export interface ISettings {
   include: string;
   mediaRootDir: string;
   disAddCom: boolean;
+  keepOriginalFilename: boolean;
   useMD5ForNewAtt: boolean;
   removeMediaFolder: boolean;
   removeOrphansCompl: boolean;
@@ -93,6 +94,7 @@ export const DEFAULT_SETTINGS: ISettings = {
   include: ".*\\.md",
   mediaRootDir: "_resources/${notename}",
   disAddCom: false,
+  keepOriginalFilename: false,
   useMD5ForNewAtt: true,
   removeMediaFolder: true,
   removeOrphansCompl: false,
